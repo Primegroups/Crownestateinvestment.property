@@ -1,0 +1,1062 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173d32">
+<meta name="description" content="Crown Estate Investment is your connection to property for sale, rent and investment.">
+<title>Crown Estate Investment | Find Your Place</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #173d32;
+  --green2: #245b48;
+  --lime: #d8e8a8;
+  --cream: #f7f6f0;
+  --white: #fff;
+  --gray: #737b75;
+  --line: #e5e6dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--green);
+  background: var(--cream);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(1180px, 91%);
+  margin: auto;
+}
+
+h1, h2, h3 {
+  font-family: "Manrope", sans-serif;
+  letter-spacing: -1.2px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  padding: 14px 23px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: var(--green2);
+  border-color: var(--green2);
+}
+
+.btn-light {
+  background: white;
+  color: var(--green);
+  border-color: white;
+}
+
+.btn-light:hover {
+  background: var(--lime);
+  color: var(--green);
+  border-color: var(--lime);
+}
+
+.kicker {
+  display: inline-block;
+  color: var(--green2);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* HEADER */
+
+.header {
+  background: var(--cream);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
+
+.logo {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.logo span {
+  color: #70965b;
+}
+
+.logo small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 4px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  color: #70965b;
+}
+
+.menu-cta {
+  padding: 11px 16px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* HERO */
+
+.hero {
+  padding: 45px 0 75px;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: .92fr 1.08fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.hero-copy {
+  padding: 30px 0;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 5.5vw, 70px);
+  line-height: 1.09;
+  margin: 20px 0;
+  letter-spacing: -3px;
+}
+
+.hero h1 span {
+  color: #72965b;
+}
+
+.hero-copy p {
+  color: var(--gray);
+  font-size: 15px;
+  max-width: 475px;
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-image-box {
+  position: relative;
+  min-width: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.hero-note {
+  position: absolute;
+  bottom: 20px;
+  left: -22px;
+  background: white;
+  padding: 18px 23px;
+  border-radius: 5px;
+  box-shadow: 0 10px 35px #173d3217;
+}
+
+.hero-note strong {
+  display: block;
+  font-size: 15px;
+}
+
+.hero-note span {
+  color: var(--gray);
+  font-size: 11px;
+}
+
+/* SEARCH */
+
+.search-section {
+  padding: 0 0 45px;
+}
+
+.search-box {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-width: 0;
+  background: #fbfbf8;
+  border: 1px solid #dfe2d9;
+  border-radius: 4px;
+  padding: 13px;
+  outline-color: var(--green2);
+  color: var(--green);
+}
+
+.search-box .btn {
+  width: 100%;
+}
+
+/* SHARED SECTION HEADERS */
+
+.section {
+  padding: 85px 0;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: clamp(29px, 4vw, 45px);
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.section-heading p {
+  color: var(--gray);
+  font-size: 14px;
+  max-width: 570px;
+}
+
+/* CATEGORY STRIP */
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.category-card {
+  position: relative;
+  height: 245px;
+  overflow: hidden;
+  border-radius: 6px;
+  color: white;
+  background: var(--green);
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s;
+}
+
+.category-card:hover img {
+  transform: scale(1.06);
+}
+
+.category-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #091f17dc, #091f1700 85%);
+}
+
+.category-info {
+  position: absolute;
+  z-index: 1;
+  left: 22px;
+  bottom: 19px;
+}
+
+.category-info h3 {
+  font-size: 24px;
+  letter-spacing: -.5px;
+}
+
+.category-info span {
+  font-size: 12px;
+  color: #edf3e8;
+}
+
+/* PROPERTY MARKETPLACE */
+
+.properties {
+  background: white;
+}
+
+.property-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  background: white;
+  color: var(--green);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--green);
+  border-color: var(--green);
+  color: white;
+}
+
+.results-label {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.property-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.property-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px #173d3212;
+}
+
+.property-card[hidden] {
+  display: none;
+}
+
+.property-image {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  background: #e7e9e0;
+}
+
+.property-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.04);
+}
+
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 11px;
+  border-radius: 3px;
+  background: var(--lime);
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.property-content {
+  padding: 19px;
+}
+
+.property-type {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #72965b;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.property-content h3 {
+  font-size: 20px;
+  margin: 7px 0;
+  line-height: 1.35;
+}
+
+.location {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.property-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 15px;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.enquire-link {
+  color: #47724a;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  padding: 35px;
+  text-align: center;
+  color: var(--gray);
+}
+
+/* INVESTMENT BANNER */
+
+.investment {
+  background: var(--green);
+  color: white;
+  padding: 65px 0;
+}
+
+.investment-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+.investment h2 {
+  font-size: clamp(29px, 4vw, 43px);
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.investment p {
+  max-width: 650px;
+  color: #d4dfd7;
+  font-size: 14px;
+}
+
+.investment .kicker {
+  color: var(--lime);
+}
+
+/* WHY CHOOSE US */
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.why-card {
+  padding: 27px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 5px;
+}
+
+.why-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: #edf2e7;
+  color: var(--green);
+  font-size: 20px;
+  border-radius: 50%;
+  margin-bottom: 17px;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 13px;
+  color: var(--gray);
+}
+
+/* ABOUT */
+
+.about {
+  background: #ecefe6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about-copy h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.2;
+  margin: 12px 0 20px;
+}
+
+.about-copy p {
+  color: #68736b;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.about-list {
+  list-style: none;
+  margin: 22px 0;
+}
+
+.about-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #d8ddd1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.about-list li::before {
+  content: "✓";
+  margin-right: 10px;
+  color: #47724a;
+  font-weight: 800;
+}
+
+/* CONTACT */
+
+.contact {
+  background: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 55px;
+}
+
+.contact-copy h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  margin: 12px 0 18px;
+}
+
+.contact-copy p {
+  color: var(--gray);
+  font-size: 14px;
+  margin: 18px 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-copy a {
+  color: #47724a;
+  font-weight: 700;
+}
+
+.contact-form {
+  padding: 28px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+  border-radius: 6px;
+}
+
+.contact-form .field {
+  margin-bottom: 17px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  width: 100%;
+}
+
+.form-note {
+  font-size: 11px;
+  color: var(--gray);
+  margin-top: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #102d25;
+  color: white;
+  padding: 35px 0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.footer-brand span {
+  color: var(--lime);
+}
+
+.footer-row p,
+.footer-row a {
+  font-size: 12px;
+  color: #d0dbd3;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 13px;
+  }
+
+  .menu-cta {
+    display: none;
+  }
+
+  .hero-layout {
+    gap: 25px;
+  }
+
+  .hero-image {
+    height: 390px;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .property-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-grid,
+  .contact-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+
+  .nav {
+    padding: 14px 0;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 25px 0 55px;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero-copy {
+    padding: 20px 0 0;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-note {
+    left: 10px;
+    bottom: 12px;
+  }
+
+  .trust-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .search-box {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .category-grid,
+  .property-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 230px;
+  }
+
+  .property-image {
+    height: 250px;
+  }
+
+  .investment-layout {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    height: 290px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .footer-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="container nav">
+    <a class="logo" href="#home">
+      CROWN <span>ESTATE</span>
+      <small>INVESTMENT</small>
+    </a>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#categories">Explore</a>
+      <a href="#properties">Properties</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a class="menu-cta" href="#contact">List Your Property ↗</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container hero-layout">
+    <div class="hero-copy">
+      <span class="kicker">Your next chapter starts here</span>
+
+      <h1>Find a place.<br>Build your <span>future.</span></h1>
+
+      <p>
+        Discover homes for sale, rental properties and real estate
+        investment opportunities through Crown Estate Investment.
+        Your next property connection starts here.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#properties" class="btn">Explore Properties ↗</a>
+        <a href="#contact" class="btn"
+          style="background:transparent;color:#173d32;">
+          Contact Us
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-box">
+      <img class="hero-image"
+        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+        alt="Modern home with contemporary architecture">
+
+      <div class="hero-note">
+        <strong>Property Made Personal</strong>
+        <span>Sales · Rentals · Investment</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    <form class="search-box" id="searchForm">
+      <div class="field">
+        <label for="keyword">Location or keyword</label>
+        <input id="keyword" type="search"
+          placeholder="Search Lagos, Asaba, house...">
+      </div>
+
+      <div class="field">
+        <label for="category">I'm looking to</label>
+        <select id="category">
+          <option value="all">Explore everything</option>
+          <option value="sale">Buy a property</option>
+          <option value="rent">Rent a property</option>
+          <option value="investment">Invest in property</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="type">Property type</label>
+        <select id="type">
+          <option value="all">All property types</option>
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+          <option value="land">Land</option>
+        </select>
+      </div>
+
+      <button class="btn" type="submit">Search ↗</button>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-heading">
+      <span class="kicker">Explore by purpose</span>
+      <h2>What brings you here?</h2>
+      <p>
+        Whether you want a place to call home or an opportunity to explore,
+        choose the property service that suits your needs.
+      </p>
+    </div>
+
+    <div class="category-grid">
+      <a class="category-card" href="#properties" data-go="sale">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80"
+          alt="House available for purchase">
+        <div class="category-info">
+          <h3>Buy a Home</h3>
+          <span>Explore properties for sale ↗</span>
+        </div>
+      </a>
+
+      <a class="category-card" href="#properties" data-go="rent">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
+          alt="Beautiful apartment interior">
+        <div class="category-info">
+          <h3>Find a Rental</h3>
+          <span>Discover rental opportunities ↗</span>
+        </div>
+      </a>
+
+      <a class="category-card" href="#properties" data-go="investment">
+        <img loading="lazy"
+          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+          alt="Open land and green landscape">
+        <div class="category-info">
+          <h3>Explore Investment</h3>
+          <span>Discover property opportunities ↗</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section properties" id="properties">
+  <div class="container">
+    <div class="section-heading">
+      <span class="kicker">The property collection</span>
+      <h2>Explore Property Opportunities</h2>
+      <p>
+        Browse our example property cards. Contact us for information
+        about genuine listings and their current availability.
+      </p>
+    </div>
+
+    <div class="property-controls">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sale">For Sale</button>
+        <button class="filter-btn" data-filter="rent">For Rent</button>
+        <button class="filter-btn" data-filter="investment">Investment</button>
+      </div>
+
+      <span class="results-label" id="resultsCount">6 sample listings</span>
+    </div>
+
+    <div class="property-grid" id="propertyGrid">
+
+      <article class="property-card" data-category="sale"
+        data-type="house" data-search="lekki lagos modern house">
+        <div class="property-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80"
+            alt="Modern detached house">
+          <span class="badge">For Sale</span>
+        </div>
+        <div class="property-content">
+          <span class="property-type">Residential · House</span>
+          <h3>Modern Family House</h3>
+          <p class="location">⌖ Lekki, Lagos · Sample listing</p>
+          <div class="property-bottom">
+            <span class="price">Price on request</span>
+            <a class="enquire-link enquiry-link"
+              data-property="Modern Family House in Lekki, Lagos"
+              href="#contact">ENQUIRE ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="rent"
+        data-type="apartment" data-search="victoria island lagos apartment">
+        <div class="property-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
+            alt="Elegant apartment">
+          <span class="badge">For Rent</span>
+        </div>
+        <div class="property-content">
+          <span class="property-type">Residential · Apartment</span>
+          <h3>Elegant City Apartment</h3>
+          <p class="location">⌖ Victoria Island, Lagos · Sample listing</p>
+          <div class="property-bottom">
+            <span class="price">Rent on request</span>
+            <a class="enquire-link enquiry-link"
+              data-property="Elegant City Apartment in Victoria Island, Lagos"
+              href="#contact">ENQUIRE ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="investment"
+        data-type="land" data-search="asaba delta state land investment">
+        <div class="property-image">
+          <img loading="lazy"
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+            alt="Green open land">
+          <span class="badge">Investment</span>
+        </div>
+        <div class="property-content">
+          <span class="property-type">Land · Opportunity</span>
+          <h3>Residential Land Opportunity</h3>
+          <p class="location">⌖ Asaba, Delta State · Sample listing</p>
+          <div class="property-bottom">
+            <span class="price">Price on request</span>
+            <a class="e
